@@ -1,0 +1,29 @@
+program UTS;
+
+uses crt;
+
+var
+   nama_awal, nama_akhir:string;
+   suhu, K, F, R:real;
+   
+begin
+
+  clrscr;
+  write('masukkan nama awal                : ');
+  readln(nama_awal);
+  write('masukkan nama akhir               : ');
+  readln(nama_akhir);
+  write('masukkan suhu [celcius]           : ');
+  readln(suhu);
+  
+  clrscr;
+  F:=suhu*9/5+32;
+  K:=273+suhu;
+  R:=4/5*suhu;
+  
+  clrscr;
+  writeln('halo ',nama_awal,' ',nama_akhir,', ',' hari ini bersuhu ', F:0:2,' F',
+  ' /', K:0:2,' K', ' /', R:0:2,' R');
+  readln;
+  readln;
+end.

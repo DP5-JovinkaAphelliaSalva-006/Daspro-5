@@ -1,0 +1,31 @@
+program UTS;
+
+uses crt;
+
+var
+   x,y:integer;
+begin
+  clrscr;
+  write('masukkan titik x: ');
+  readln(x);
+  write('masukkan titik y: ');
+  readln(y);
+  
+  if (x >= 0) and (y >= 0) then
+   begin 
+    writeln('berada di kuadran 1');
+   end
+  else if (x < 0) and (y >= 0) then
+   begin 
+    writeln('berada di kuadran 2');
+   end
+  else if (x < 0) and (y < 0) then
+   begin 
+    writeln('berada di kuadran 3');
+   end
+  else if (x >= 0) and (y >= 0) then
+   begin 
+    writeln('berada di kuadran 4');
+   end;
+   readln;
+end.

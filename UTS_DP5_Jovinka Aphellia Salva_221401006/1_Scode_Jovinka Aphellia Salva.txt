@@ -1,0 +1,27 @@
+program UTS;
+
+uses crt;
+
+var
+   nama, waktu:string;
+   
+begin
+
+  clrscr;
+  write('masukkan nama                     : ');
+  readln(nama);
+  write('masukkan waktu [pagi/siang/malam] : ');
+  readln(waktu);
+  
+  clrscr;
+  writeln('S');
+  writeln('E');
+  writeln('L');
+  writeln('A');
+  writeln('M');
+  writeln('A');
+  writeln('T');
+  writeln(waktu);
+  writeln(nama);
+  readln;
+end.
